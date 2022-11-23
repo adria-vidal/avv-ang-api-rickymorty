@@ -1,1 +1,12 @@
-<p>characters works!</p>
+<div >
+  <div class="card" style="width: 18rem;" *ngFor="let character of characters">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{character.name}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+        content.</p>
+      <a href="#" class="btn btn-warning w-100">See More</a>
+    </div>
+  </div>
+</div>
+<ng-template #espera> Esperando datos...</ng-template>
