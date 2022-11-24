@@ -11,4 +11,8 @@ export class ConsultaapiService {
     let randmy: Number = Math.floor(Math.random() * (100 - 1) - 1);
     return this.http.get(`https://rickandmortyapi.com/api/character/${randmy}`);
   }
+  // obtener id del personaje
+  getId(id: number){
+  return this.http.get(`https://rickandmortyapi.com/api/character/${id}`);
+  }
 }

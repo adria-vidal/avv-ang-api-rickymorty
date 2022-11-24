@@ -7,6 +7,7 @@ import { HomeComponent } from './elements/home/home.component';
 import { NavbarComponent } from './elements/navbar/navbar.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
     component: HomeComponent,
@@ -24,9 +25,9 @@ const routes: Routes = [
     component: CharactersComponent,
   },
   {
-    path: 'details',
+    path: 'details/:id',
     component: DetailsComponent,
-  }
+  },
 ];
 
 @NgModule({
